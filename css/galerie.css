@@ -1,0 +1,101 @@
+.gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+    grid-auto-flow: dense;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    border-radius: 22px;
+    box-shadow: 0 6px 22px rgba(61, 38, 48, .08);
+    cursor: zoom-in;
+}
+
+.gallery-item img {
+    transition: transform .6s ease;
+}
+
+.gallery-item:hover img,
+.gallery-item:focus-visible img {
+    transform: scale(1.1);
+}
+
+/* Visionneuse plein écran */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 1rem 3.5rem;
+    background: rgba(30, 14, 22, .94);
+    animation: lb-in .25s ease;
+}
+
+@keyframes lb-in {
+    from {
+        opacity: 0;
+    }
+}
+
+.lb-figure {
+    display: grid;
+    justify-items: center;
+    gap: .8rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.lb-img {
+    max-width: min(92vw, 1100px);
+    max-height: 72vh;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .06);
+    object-fit: contain;
+}
+
+.lb-cap {
+    color: #F6E6ED;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lb-btn {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .16);
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.lb-btn:hover {
+    background: var(--primary-color);
+}
+
+.lb-close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.lb-prev,
+.lb-next {
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.lb-prev {
+    left: .75rem;
+}
+
+.lb-next {
+    right: .75rem;
+}

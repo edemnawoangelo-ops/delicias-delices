@@ -1,0 +1,214 @@
+/* ===== Hero ===== */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(3.5rem, 8vw, 6.5rem);
+    background: var(--secondary-color);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: -90px;
+    bottom: -110px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: var(--cream-color);
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-brand {
+    margin-bottom: .8rem;
+    font-family: var(--font-title);
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #B82A70;
+}
+
+.hero h1 {
+    margin-bottom: 1.2rem;
+    font-size: clamp(2.5rem, 6.4vw, 4.6rem);
+    letter-spacing: -.02em;
+}
+
+.lead {
+    max-width: 33rem;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    color: var(--dark-color);
+}
+
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.hero-visual {
+    position: relative;
+    width: min(100%, 520px);
+    aspect-ratio: 1;
+    margin-inline: auto;
+}
+
+.hero-photo {
+    position: absolute;
+    aspect-ratio: auto;
+    border: 6px solid #fff;
+    box-shadow: 0 22px 45px rgba(61, 38, 48, .2);
+}
+
+.hero-photo.main {
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 90%;
+    border-radius: 999px 999px 32px 32px;
+}
+
+.hero-photo.small {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-photo.s1 {
+    top: 8%;
+    right: 0;
+    width: 36%;
+}
+
+.hero-photo.s2 {
+    right: 6%;
+    bottom: 0;
+    width: 40%;
+    animation-delay: -3s;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+/* ===== Avantages (liste ouverte, sans cartes) ===== */
+.perks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.perk {
+    text-align: center;
+}
+
+.ico {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    font-size: 1.9rem;
+}
+
+.ico img.perk-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perk h3 {
+    margin-bottom: .4rem;
+    font-size: 1.2rem;
+}
+
+/* ===== Services (pastilles) ===== */
+.service-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .8rem;
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    padding: .7rem 1.3rem;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--dark-color);
+    font-weight: 800;
+}
+
+.pill > span {
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== À propos ===== */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.about-img {
+    aspect-ratio: 5 / 4;
+    border-radius: 160px 160px 28px 28px;
+    box-shadow: 0 20px 40px rgba(61, 38, 48, .14);
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.9rem, 4vw, 2.7rem);
+}
+
+.about-text p {
+    max-width: 34rem;
+    margin-bottom: 1.6rem;
+}
+
+/* ===== Aperçu galerie ===== */
+.gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.g-item {
+    aspect-ratio: 1;
+    border-radius: 22px;
+}
+
+.g-item:hover img {
+    transform: scale(1.08);
+}

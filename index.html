@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DÉLICIA'S DÉLICES</title>
+    <meta name="description"
+        content="DÉLICIA'S DÉLICES, pâtisserie à Lomé : gâteaux, donuts, yaourts, samoussas et gourmandises. Commandez sur WhatsApp.">
+    <meta name="theme-color" content="#D63384">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/produits.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="DÉLICIA'S DÉLICES, retour à l'accueil"><span>DÉLICIA'S</span>
+                DÉLICES</a>
+            <nav class="main-nav" id="nav-menu" aria-label="Navigation principale">
+                <ul class="nav-menu">
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 7h12l1 13H5L6 7z" />
+                        <path d="M9 7a3 3 0 0 1 6 0" />
+                    </svg>
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="hero" aria-labelledby="titre-hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-brand reveal">DÉLICIA'S DÉLICES</p>
+                    <h1 id="titre-hero" class="reveal">Des délices préparés avec amour</h1>
+                    <p class="lead reveal">Découvrez nos pâtisseries, desserts et gourmandises préparés avec soin pour
+                        rendre chaque moment encore plus délicieux.</p>
+                    <div class="btn-row reveal">
+                        <a class="btn btn-primary" href="produits.html">Découvrir nos produits</a>
+                        <a class="btn btn-outline" href="contact.html"
+                            data-whatsapp="Bonjour DÉLICIA'S DÉLICES, je souhaite passer une commande.">Commander
+                            maintenant</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <figure class="media hero-photo main" data-emoji="🍰"><img src="images/hero/hero.jpg"
+                            alt="Gâteau roulé garni de crème" width="640" height="640"></figure>
+                    <figure class="media hero-photo small s1" data-emoji="🍩"><img src="images/hero/hero-2.jpg"
+                            alt="Donut sucré" width="640" height="640"></figure>
+                    <figure class="media hero-photo small s2" data-emoji="🥟"><img src="images/hero/hero-3.jpg"
+                            alt="Samoussas dorés" width="640" height="640"></figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="titre-avantages">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="titre-avantages">Pour chaque occasion</h2>
+                    <p>Une envie sucrée, un anniversaire, un cadeau à offrir : nous préparons tout avec soin.</p>
+                </div>
+                <div class="perks grid">
+                    <article class="perk reveal"><span class="ico" aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792661246/Produits_wwnpte.jpg"
+                                alt="Produits"></span>
+                        <h3>Produits préparés avec soin</h3>
+                        <p>Des douceurs réalisées avec attention, pour vos moments de plaisir.</p>
+                    </article>
+                    <article class="perk reveal"><span class="ico" aria-hidden="true"><img class="perk-photo"
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792660686/gateaux-anniv_owff11.jpg"
+                                alt="Gâteaux d'anniversaire"></span>
+                        <h3>Gâteaux personnalisés</h3>
+                        <p>Dites-nous votre envie, nous la transformons en gâteau.</p>
+                    </article>
+                    <article class="perk reveal"><span class="ico" aria-hidden="true"><img class="perk-photo"
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792660662/Emballages_cadeaux_dpvaux.jpg"
+                                alt="Emballages cadeaux"></span>
+                        <h3>Emballages cadeaux</h3>
+                        <p>Une présentation soignée pour offrir en toute élégance.</p>
+                    </article>
+                    <article class="perk reveal"><span class="ico" aria-hidden="true"><img
+                                src="https://img.icons8.com/?size=100&id=uTI4SjCIkNJp&format=png&color=000000"
+                                alt="livraison"></span>
+                        <h3>Livraison à Lomé</h3>
+                        <p>Retrait sur place ou livraison à Lomé, selon votre choix.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-cream" aria-labelledby="titre-vedettes">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="titre-vedettes">Nos produits vedettes</h2>
+                    <p>Les gourmandises que nos clients commandent le plus.</p>
+                </div>
+                <div class="grid grid-products" id="featured-products">
+                    <noscript>
+                        <p>Activez JavaScript pour afficher les produits.</p>
+                    </noscript>
+                </div>
+                <p class="center reveal"><a class="btn btn-outline" href="produits.html">Voir tout le catalogue</a></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="titre-services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="titre-services">Nos services</h2>
+                    <p>Du dessert du quotidien au gâteau d'anniversaire.</p>
+                </div>
+                <ul class="service-pills reveal">
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792701257/d%C3%A8gu%C3%A9_x7pabd.jpg"
+                                alt="Dègué et yaourt"></span>Dègué et yaourt</li>
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792701383/Glace_tn8mqj.jpg"
+                                alt="Glaces"></span>Glaces</li>
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792702107/963629651542986992_hjvgeu.jpg"
+                                alt="Desserts"></span>Desserts : pastels, donuts, samoussas, croissants
+                    </li>
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792702475/Sakarpala_pmfgza.jpg"
+                                alt="Amuse-bouche"></span>Amuse-bouche</li>
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792702107/963629651542986992_hjvgeu.jpg"
+                                alt="Gâteaux d'anniversaire"></span>Gâteaux d'anniversaire</li>
+                    <li class="pill"><span aria-hidden="true"><img
+                                src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1792660662/Emballages_cadeaux_dpvaux.jpg"
+                                alt="Emballages cadeaux"></span>Emballages cadeaux</li>
+                </ul>
+                <p class="center reveal"><a class="btn btn-primary" href="services.html">Voir tous les services</a></p>
+            </div>
+        </section>
+
+        <section class="section section-pink" aria-labelledby="titre-apropos">
+            <div class="container about-grid">
+                <figure class="media about-img reveal" data-emoji="🧁"><img src="images/a-propos/passion.jpg"
+                        alt="Muffins dorés de DÉLICIA'S DÉLICES" width="640" height="512" loading="lazy"></figure>
+                <div class="about-text reveal">
+                    <h2 id="titre-apropos">Des douceurs gourmandes, préparées avec soin</h2>
+                    <p>DÉLICIA'S DÉLICES est une pâtisserie spécialisée dans la création de douceurs gourmandes, de
+                        desserts, de gâteaux et de petites bouchées, pour vos anniversaires, vos événements et vos
+                        cadeaux.</p>
+                    <a class="btn btn-primary" href="a-propos.html">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="titre-galerie">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="titre-galerie">Un avant-goût en images</h2>
+                </div>
+                <div class="gallery-preview grid">
+                    <a class="media g-item reveal" href="galerie.html" data-emoji="🧁"><img
+                            src="images/galerie/galerie-1.jpg" alt="Muffins dorés" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media g-item reveal" href="galerie.html" data-emoji="🥞"><img
+                            src="images/galerie/galerie-2.jpg" alt="Crêpes roulées" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media g-item reveal" href="galerie.html" data-emoji="🧁"><img
+                            src="images/galerie/galerie-3.jpg" alt="Madeleines dorées" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media g-item reveal" href="galerie.html" data-emoji="🍰"><img
+                            src="images/galerie/galerie-4.jpg" alt="Gâteau roulé à la crème" width="640" height="640"
+                            loading="lazy"></a>
+                </div>
+                <p class="center reveal"><a class="btn btn-outline" href="galerie.html">Voir la galerie</a></p>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="titre-cta">
+            <div class="container reveal">
+                <h2 id="titre-cta">Une envie particulière ?</h2>
+                <p>Gâteau d'anniversaire, coffret cadeau ou commande personnalisée ? Nous préparons vos envies avec
+                    soin.</p>
+                <a class="btn btn-light" href="contact.html"
+                    data-whatsapp="Bonjour DÉLICIA'S DÉLICES, j'aimerais passer une commande personnalisée.">Passer une
+                    commande</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo logo-light" href="index.html"><span>DÉLICIA'S</span> DÉLICES</a>
+                <p>Votre satisfaction, notre priorité.</p>
+            </div>
+            <nav aria-label="Pied de page">
+                <h2 class="foot-title">Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2 class="foot-title">Contact</h2>
+                <ul>
+                    <li><a href="tel:+22879199278">+228 79 19 92 78</a></li>
+                    <li>Lomé, Togo</li>
+                    <li><a href="contact.html" data-whatsapp="Bonjour DÉLICIA'S DÉLICES,">Écrire sur WhatsApp</a></li>
+                    <!-- Facebook / Instagram : à ajouter ici dès que les adresses officielles sont fournies. -->
+                </ul>
+            </div>
+        </div>
+        <p class="container copyright">© 2026 DÉLICIA'S DÉLICES — Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/donnees-produits.js" defer></script>
+    <script src="js/panier.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/accueil.js" defer></script>
+</body>
+
+</html>

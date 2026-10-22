@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — DÉLICIA'S DÉLICES</title>
+    <meta name="description"
+        content="Contactez DÉLICIA'S DÉLICES à Lomé : téléphone, WhatsApp et formulaire pour préparer votre message de commande.">
+    <meta name="theme-color" content="#D63384">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="DÉLICIA'S DÉLICES, retour à l'accueil"><span>DÉLICIA'S</span>
+                DÉLICES</a>
+            <nav class="main-nav" id="nav-menu" aria-label="Navigation principale">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 7h12l1 13H5L6 7z" />
+                        <path d="M9 7a3 3 0 0 1 6 0" />
+                    </svg>
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="page-head">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>Une question, une commande ou une idée de gâteau ? Écrivez-nous ou appelez-nous.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Nous contacter">
+            <div class="container contact-grid">
+                <div class="info-list">
+                    <article class="info-card reveal">
+                        <span class="info-ico" aria-hidden="true"><img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000" alt="telephone"></span>
+                        <div>
+                            <h2>Téléphone</h2>
+                            <p>+228 79 19 92 78</p>
+                            <a class="btn btn-primary btn-sm" href="tel:+22879199278">Appeler</a>
+                        </div>
+                    </article>
+                    <article class="info-card reveal">
+                        <span class="info-ico" aria-hidden="true"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="WhatsApp"></span>
+                        <div>
+                            <h2>WhatsApp</h2>
+                            <p>Pour commander ou poser une question.</p>
+                            <a class="btn btn-whatsapp btn-sm" href="#"
+                                data-whatsapp="Bonjour DÉLICIA'S DÉLICES,">Écrire sur WhatsApp</a>
+                        </div>
+                    </article>
+                    <article class="info-card reveal">
+                        <span class="info-ico" aria-hidden="true"><img src="https://img.icons8.com/?size=100&id=kM0cd7be1NC1&format=png&color=000000" alt="tiktok"></span>
+                        <div>
+                            <h2>TikTok</h2>
+                            <p>Retrouvez-nous sur TikTok.</p>
+                            <a class="btn btn-outline btn-sm social-link-placeholder"
+                                href="https://www.tiktok.com/@delicia" target="_blank"
+                                rel="noopener noreferrer">Voir notre profil TikTok</a>
+                        </div>
+                    </article>
+                    <article class="info-card reveal">
+                        <span class="info-ico" aria-hidden="true"><img src="https://img.icons8.com/?size=100&id=qbDdDnJoMZMV&format=png&color=000000" alt="localisation"></span>
+                        <div>
+                            <h2>Localisation</h2>
+                            <p>Lomé, Togo</p>
+                            <a class="btn btn-outline btn-sm" href="https://maps.app.goo.gl/8M1HvBjsiUUeJiYd8"
+                                target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="form-card reveal">
+                    <h2>Écrivez-nous</h2>
+                    <form id="contact-form" novalidate>
+                        <div class="field">
+                            <label for="c-name">Nom <span aria-hidden="true">*</span></label>
+                            <input id="c-name" type="text" autocomplete="name" required aria-describedby="c-name-err"
+                                aria-invalid="false">
+                            <p class="error" id="c-name-err"></p>
+                        </div>
+                        <div class="field">
+                            <label for="c-phone">Numéro de téléphone <span aria-hidden="true">*</span></label>
+                            <input id="c-phone" type="tel" inputmode="tel" autocomplete="tel"
+                                placeholder="+228 90 00 00 00" required aria-describedby="c-phone-err"
+                                aria-invalid="false">
+                            <p class="error" id="c-phone-err"></p>
+                        </div>
+                        <div class="field">
+                            <label for="c-email">Adresse e-mail <small>(facultatif)</small></label>
+                            <input id="c-email" type="email" autocomplete="email" aria-describedby="c-email-err"
+                                aria-invalid="false">
+                            <p class="error" id="c-email-err"></p>
+                        </div>
+                        <div class="field">
+                            <label for="c-subject">Sujet <span aria-hidden="true">*</span></label>
+                            <select id="c-subject" required aria-describedby="c-subject-err" aria-invalid="false">
+                                <option value="">Choisir un sujet</option>
+                                <option>Passer une commande</option>
+                                <option>Gâteau d'anniversaire</option>
+                                <option>Coffret cadeau</option>
+                                <option>Commande personnalisée</option>
+                                <option>Autre question</option>
+                            </select>
+                            <p class="error" id="c-subject-err"></p>
+                        </div>
+                        <div class="field">
+                            <label for="c-message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="c-message" rows="5" maxlength="600" required aria-describedby="c-message-err"
+                                aria-invalid="false"></textarea>
+                            <p class="error" id="c-message-err"></p>
+                        </div>
+                        <p class="error" id="form-status" role="alert"></p>
+                        <button class="btn btn-primary btn-block" type="submit">Préparer mon message WhatsApp</button>
+                        <p class="muted note">Les champs marqués d'une * sont obligatoires. Aucune donnée n'est
+                            enregistrée sur un serveur : le message est préparé ici, puis envoyé par vos soins depuis
+                            WhatsApp.</p>
+                    </form>
+
+                    <div class="preview" id="preview" tabindex="-1" hidden>
+                        <h3>Vérifiez votre message</h3>
+                        <pre id="preview-text"></pre>
+                        <p class="muted">Ce message n'est pas encore envoyé. WhatsApp s'ouvrira dans un nouvel onglet :
+                            votre demande n'est prise en compte qu'une fois le message envoyé depuis WhatsApp.</p>
+                        <div class="btn-row">
+                            <button class="btn btn-whatsapp" type="button" id="confirm-send">Ouvrir WhatsApp</button>
+                            <button class="btn btn-ghost" type="button" id="edit-msg">Modifier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo logo-light" href="index.html"><span>DÉLICIA'S</span> DÉLICES</a>
+                <p>Votre satisfaction, notre priorité.</p>
+            </div>
+            <nav aria-label="Pied de page">
+                <h2 class="foot-title">Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2 class="foot-title">Contact</h2>
+                <ul>
+                    <li><a href="tel:+22879199278">+228 79 19 92 78</a></li>
+                    <li>Lomé, Togo</li>
+                    <li><a href="contact.html" data-whatsapp="Bonjour DÉLICIA'S DÉLICES,">Écrire sur WhatsApp</a></li>
+                    <li><a class="social-link-placeholder" href="https://www.tiktok.com/@delicia" target="_blank"
+                            rel="noopener noreferrer">TikTok</a></li>
+                    <!-- Facebook / Instagram : à ajouter ici dès que les adresses officielles sont fournies. -->
+                </ul>
+            </div>
+        </div>
+        <p class="container copyright">© 2026 DÉLICIA'S DÉLICES — Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/donnees-produits.js" defer></script>
+    <script src="js/panier.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</body>
+
+</html>

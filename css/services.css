@@ -1,0 +1,26 @@
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+}
+
+.service .media {
+    aspect-ratio: 16 / 9;
+}
+
+.service .media.no-img::after {
+    font-size: 3.6rem;
+}
+
+.service h2 {
+    margin-bottom: .4rem;
+    font-size: 1.35rem;
+}
+
+.service .btn {
+    align-self: flex-start;
+}
+
+.services-note {
+    max-width: 40rem;
+    margin: 3rem auto 0;
+    text-align: center;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nos produits — DÉLICIA'S DÉLICES</title>
+    <meta name="description"
+        content="Catalogue DÉLICIA'S DÉLICES : gâteaux roulés et d'anniversaire, donuts, glaces, yaourts, dègué, pastels, samoussas, croissants, madeleines et coffrets cadeaux.">
+    <meta name="theme-color" content="#D63384">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produits.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="DÉLICIA'S DÉLICES, retour à l'accueil"><span>DÉLICIA'S</span>
+                DÉLICES</a>
+            <nav class="main-nav" id="nav-menu" aria-label="Navigation principale">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html" aria-current="page">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 7h12l1 13H5L6 7z" />
+                        <path d="M9 7a3 3 0 0 1 6 0" />
+                    </svg>
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="page-head">
+            <div class="container">
+                <h1>Nos produits</h1>
+                <p>Choisissez vos gourmandises, ajoutez-les au panier, puis envoyez votre commande sur WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="section catalog" aria-label="Catalogue">
+            <div class="container">
+                <div class="toolbar">
+                    <div class="search">
+                        <label class="sr-only" for="search">Rechercher un produit</label>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="M20 20l-3.5-3.5" />
+                        </svg>
+                        <input id="search" type="search" placeholder="Rechercher un produit" autocomplete="off"
+                            maxlength="80">
+                    </div>
+                    <div class="sort">
+                        <label for="sort">Trier par</label>
+                        <select id="sort">
+                            <option value="default">Par défaut</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="name">Ordre alphabétique</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="chips" id="filters" role="group" aria-label="Filtrer par catégorie"></div>
+                <p class="result-count" id="result-count" aria-live="polite"></p>
+                <p class="muted price-detail">Pour un même produit, bénéficiez de 10 % de réduction dès 5 unités commandées. Offre non applicable aux gâteaux d’anniversaire.</p>
+
+                <div class="grid grid-products" id="product-grid">
+                    <noscript>
+                        <p>Activez JavaScript pour afficher les produits.</p>
+                    </noscript>
+                </div>
+
+                <div class="empty" id="empty" hidden>
+                    <span aria-hidden="true">🔍</span>
+                    <h2>Aucun produit ne correspond</h2>
+                    <p>Essayez un autre mot ou une autre catégorie.</p>
+                    <button class="btn btn-primary" type="button" id="reset">Voir tous les produits</button>
+                </div>
+
+                <div class="catalog-note reveal">
+                    <h2>Une envie particulière ?</h2>
+                    <p>Gâteau d'anniversaire, coffret cadeau ou commande personnalisée : écrivez-nous, nous préparons
+                        vos envies avec soin.</p>
+                    <a class="btn btn-primary" href="contact.html"
+                        data-whatsapp="Bonjour DÉLICIA'S DÉLICES, j'aimerais passer une commande personnalisée.">Écrire
+                        sur WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo logo-light" href="index.html"><span>DÉLICIA'S</span> DÉLICES</a>
+                <p>Votre satisfaction, notre priorité.</p>
+            </div>
+            <nav aria-label="Pied de page">
+                <h2 class="foot-title">Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2 class="foot-title">Contact</h2>
+                <ul>
+                    <li><a href="tel:+22879199278">+228 79 19 92 78</a></li>
+                    <li>Lomé, Togo</li>
+                    <li><a href="contact.html" data-whatsapp="Bonjour DÉLICIA'S DÉLICES,">Écrire sur WhatsApp</a></li>
+                    <!-- Facebook / Instagram : à ajouter ici dès que les adresses officielles sont fournies. -->
+                </ul>
+            </div>
+        </div>
+        <p class="container copyright">© 2026 DÉLICIA'S DÉLICES — Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/donnees-produits.js" defer></script>
+    <script src="js/panier.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/produits.js" defer></script>
+</body>
+
+</html>
