@@ -1,0 +1,110 @@
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    color: #75646c;
+    font-size: .95rem;
+}
+
+.breadcrumb a {
+    color: var(--chocolate-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    align-items: start;
+}
+
+.detail-main {
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(61, 38, 48, .12);
+}
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-top: .8rem;
+}
+
+.thumb {
+    width: 88px;
+    padding: 0;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.thumb[aria-pressed="true"] {
+    border-color: var(--primary-color);
+}
+
+.thumb img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.detail-info .card-cat {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.detail-info h1 {
+    margin: .2rem 0 .6rem;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: -.02em;
+}
+
+.detail-info .price {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.detail-desc {
+    max-width: 34rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.08rem;
+}
+
+.buy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: .8rem;
+}
+
+.buy .qty {
+    margin-top: 0;
+}
+
+.buy .qty button {
+    width: 48px;
+    height: 48px;
+}
+
+.buy .btn-primary {
+    flex: 1 1 200px;
+}
+
+.detail-info .muted {
+    margin-top: .9rem;
+}
+
+.empty h1 {
+    font-size: 1.8rem;
+}
+
+.similar {
+    margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.similar h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+}

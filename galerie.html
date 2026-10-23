@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galerie — DÉLICIA'S DÉLICES</title>
+    <meta name="description"
+        content="Galerie photo de DÉLICIA'S DÉLICES : gâteaux, donuts, madeleines, samoussas et autres gourmandises.">
+    <meta name="theme-color" content="#D63384">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="DÉLICIA'S DÉLICES, retour à l'accueil"><span>DÉLICIA'S</span>
+                DÉLICES</a>
+            <nav class="main-nav" id="nav-menu" aria-label="Navigation principale">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" type="button" data-cart-open aria-label="Ouvrir le panier">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 7h12l1 13H5L6 7z" />
+                        <path d="M9 7a3 3 0 0 1 6 0" />
+                    </svg>
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="page-head">
+            <div class="container">
+                <h1>Galerie</h1>
+                <p>Un avant-goût de nos gourmandises. Touchez une photo pour l'agrandir.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Photos">
+            <div class="container">
+                <!-- Photos de démonstration (recadrées du flyer) : remplacez les fichiers images/galerie/galerie-N.jpg ou ajoutez une ligne <a class="media gallery-item reveal"> -->
+                <div class="grid gallery-grid">
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-4.jpg" data-emoji="🍰"><img
+                            src="images/galerie/galerie-4.jpg" alt="Gâteau roulé à la crème" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-1.jpg" data-emoji="🧁"><img
+                            src="images/galerie/galerie-1.jpg" alt="Muffins dorés" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-2.jpg" data-emoji="🥞"><img
+                            src="images/galerie/galerie-2.jpg" alt="Crêpes roulées" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-3.jpg" data-emoji="🧁"><img
+                            src="images/galerie/galerie-3.jpg" alt="Madeleines dorées" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-5.jpg" data-emoji="🍩"><img
+                            src="images/galerie/galerie-5.jpg" alt="Donut sucré" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-6.jpg" data-emoji="🥛"><img
+                            src="images/galerie/galerie-6.jpg" alt="Yaourt maison" width="640" height="640"
+                            loading="lazy"></a>
+                    <a class="media gallery-item reveal" href="images/galerie/galerie-7.jpg" data-emoji="🥟"><img
+                            src="images/galerie/galerie-7.jpg" alt="Samoussas dorés" width="640" height="640"
+                            loading="lazy"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="t-cta">
+            <div class="container reveal">
+                <h2 id="t-cta">Envie de goûter ?</h2>
+                <p>Découvrez nos gourmandises et composez votre commande.</p>
+                <a class="btn btn-light" href="produits.html">Découvrir nos produits</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo logo-light" href="index.html"><span>DÉLICIA'S</span> DÉLICES</a>
+                <p>Votre satisfaction, notre priorité.</p>
+            </div>
+            <nav aria-label="Pied de page">
+                <h2 class="foot-title">Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2 class="foot-title">Contact</h2>
+                <ul>
+                    <li><a href="tel:+22879199278">+228 79 19 92 78</a></li>
+                    <li>Lomé, Togo</li>
+                    <li><a href="contact.html" data-whatsapp="Bonjour DÉLICIA'S DÉLICES,">Écrire sur WhatsApp</a></li>
+                    <!-- Facebook / Instagram : à ajouter ici dès que les adresses officielles sont fournies. -->
+                </ul>
+            </div>
+        </div>
+        <p class="container copyright">© 2026 DÉLICIA'S DÉLICES — Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/donnees-produits.js" defer></script>
+    <script src="js/panier.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/galerie.js" defer></script>
+</body>
+
+</html>
