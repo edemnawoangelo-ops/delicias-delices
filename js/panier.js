@@ -160,7 +160,7 @@ function useCurrentLocation() {
             refocus("[data-delivery-gps]");
         }, error => {
             if (error.code === error.PERMISSION_DENIED) {
-                deliveryLocation.status = "Accès à la localisation refusé. Autorisez la localisation dans les réglages du navigateur, puis réessayez ou saisissez une adresse.";
+                deliveryLocation.status = "Accès à la localisation refusé. Dans les réglages du site de votre navigateur, autorisez la localisation, puis réessayez. Vous pouvez aussi saisir une adresse ou un lien Maps.";
             } else if (error.code === error.POSITION_UNAVAILABLE) {
                 deliveryLocation.status = "Position indisponible. Activez la localisation de votre appareil ou saisissez une adresse ou un lien Maps.";
             } else {
@@ -266,9 +266,9 @@ function renderCart() {
             <label for="delivery-address">Adresse, coordonnées ou lien Google Maps</label>
             <input id="delivery-address" type="text" maxlength="300" autocomplete="street-address"
                 placeholder="Ex. 6.20, 1.19 ou lien de position Maps">
-            <button class="btn btn-ghost btn-sm" type="button" data-delivery-gps>Utiliser ma position GPS</button>
+            <button class="btn btn-ghost btn-sm" type="button" data-delivery-gps>Autoriser et utiliser ma position GPS</button>
             <p class="muted small" id="delivery-status" aria-live="polite"></p>
-            <p class="muted small">Votre position sert à estimer les frais et sera ajoutée au message WhatsApp de commande.</p>
+            <p class="muted small">Cliquez sur le bouton et acceptez la demande du navigateur. Votre position servira à estimer les frais et sera ajoutée au message WhatsApp de commande.</p>
             <p class="muted small">Estimation calculée à vol d'oiseau : 0 à 5 km = 500 FCFA, puis +500 FCFA par tranche de 5 km. Pour calculer depuis une saisie, indiquez des coordonnées ou un lien Google Maps contenant les coordonnées. Une adresse seule ne permet pas le calcul automatique. Les frais peuvent varier selon le livreur.</p>
         </div>
         <dl class="totals">
@@ -352,12 +352,20 @@ function orderOnWhatsApp() {
         document.getElementById("delivery-address").focus();
         return;
     }
-    const orderWindow = window.open(whatsappLink(buildWhatsAppMessage()), "_blank");
+    const orderUrl = whatsappLink(buildWhatsAppMessage());
+    const orderWindow = window.open("about:blank", "_blank");
     if (!orderWindow) {
         if (typeof showToast === "function") showToast("WhatsApp n’a pas pu s’ouvrir. Autorisez les fenêtres pop-up puis réessayez.");
         return;
     }
-    orderWindow.opener = null;
+    try {
+        orderWindow.location.href = orderUrl;
+        orderWindow.opener = null;
+    } catch (error) {
+        orderWindow.close();
+        if (typeof showToast === "function") showToast("Impossible d’ouvrir WhatsApp. Réessayez ou autorisez les fenêtres pop-up.");
+        return;
+    }
     clearCart();
     if (typeof showToast === "function") showToast("WhatsApp est ouvert. Votre panier a été vidé.");
 }

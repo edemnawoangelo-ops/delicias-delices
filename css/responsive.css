@@ -68,7 +68,6 @@
 
 /* Mobiles (≤ 600 px) */
 @media (max-width: 600px) {
-<<<<<<< HEAD
     .grid-products,
     .services-grid,
     .gallery-grid,
@@ -99,10 +98,10 @@
     .grid-products .card-actions .btn {
         padding-inline: .65rem;
         font-size: .85rem;
-=======
+    }
+
     .gallery-preview {
         grid-template-columns: repeat(2, 1fr);
->>>>>>> 10949d6404d37a262c63bc808bc84d2d484c4976
     }
 
     .footer-grid {

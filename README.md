@@ -7,6 +7,8 @@ Site multipage de pâtisserie (Lomé, Togo) en HTML5, CSS3 et JavaScript vanilla
 2. Installer l’extension **Live Server** (Ritwick Dey).
 3. Clic droit sur `index.html` > **Open with Live Server**.
 
+La géolocalisation du panier nécessite une origine sécurisée : utilisez `localhost` avec Live Server en développement et publiez le site en HTTPS. Au clic sur le bouton GPS, acceptez la demande du navigateur ; si l’accès a déjà été refusé, autorisez la localisation dans les réglages du site.
+
 Les polices viennent de Google Fonts : sans connexion Internet, des polices de remplacement s’affichent.
 
 ## Structure
